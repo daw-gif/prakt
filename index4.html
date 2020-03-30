@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <title>Пример веб-страницы</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/jquery-ui.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/xml2json.js"></script>
+    <script src="./js/jquery.tmpl.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/my.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 1000,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            }
+            });
+            $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+        </script>
+         <script>
+            $( function() {
+                $( "#slider-range2" ).slider({
+                range: true,
+                min: 0,
+                max: 1000,
+                values: [ 75, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount2" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                }
+                });
+                $( "#amount2" ).val( "" + $( "#slider-range2" ).slider( "values", 0 ) +
+                " - " + $( "#slider-range2" ).slider( "values", 1 ) );
+            } );
+            </script>
+<script>
+    $(function(){
+       $(".filter").click(function()
+       {
+           if($(this).hasClass('active'))
+               $(this).removeClass('active');
+               else
+               $(this).addClass('active');
+       });
+       return false;
+    }); 
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="m-3">
+                    <img src="./images/loopa.png" alt="Поиск">
+                    <br><br>
+
+                    <input type="image" src="./images/acompany.png">
+                    <input type="image" src="./images/delivery.png">
+                    <h5 class="fonk">Товары наши хороши - </h5>
+                    <h6 class="lfonk">развивайтесь, малыши!</h6>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="m-3">
+                    <p class="text-center">
+                        <img src="./images/logo.png" alt="гусари">
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="image2" src="./images/tryba.png">
+                <img class="image2" src="./images/time.png">
+                <input type="image" class="image2" src="./images/phone.png">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="zakaz">
+                    <p class="text-center">
+                <img src="./images/zakaz.png" class="zakaz"></p>
+                <gor class="text-center" ><p ><text   >фио</text>
+                <input type="text" style="width: 250px;margin-left: 150px;">
+                <br><br>
+                <text style="margin-right: 30px;" >Телефон</text>
+               
+                <input type="text" style="width: 250px;margin-left: 85px;">
+                <br><br>
+                <text style="margin-right: 30px;" >e-mail</text>
+               
+                <input type="text" style="width: 250px;margin-left: 105px;">
+                <br><br>
+                <text style="margin-right: 350px;">ваш заказ:</text>
+                
+
+                <div id="content">
+
+                </div>
+           
+       
+           
+             <input type="image" src="./images/oform.png" style="margin-right: 250px;">
+             <br><br>
+             <input type="radio" checked name="rad" id="rad1"/><label for="rad1"  style="margin-right: 300px;">покупка с регистрацией</label>
+             <br>
+             <input type="radio" name="rad" id="rad2"/><label for="rad2" style="margin-right: 130px;">вход для зарегистрированных пользователей</label>
+            </gor>  
+            </p>
+            </div>
+        
+                                </div>
+                                </div>
+                                </div>
+                                                                                                                                                                                                                                       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>                           
+                     
+    <footer>
+
+        <footer class="footer"  >
+            <div class="container" >
+     
+                <img src="./images/downlogo.png" class="down" style="margin-right:100px;">
+                <img src="./images/downtryba.png" class="down" style="margin-right:100px;">
+                <img class="icon down" style="background-position: 2px 0px;">
+                <img class="icon down" style="background-position: -28px 0px;">
+                <img class="icon down" style="background-position: -58px 0px;">
+                <img class="icon down" style="background-position: -89px 0px;">
+                <img class="icon down" style="background-position: -120px 0px;">
+                <img class="icon down" style="background-position: -150px 0px;">
+                <img class="icon down" style="background-position: -179px 0px; ">
+                <img src="./images/gees.png" style= "margin-left:70px; position: relative; top:-80px; "  class="object">
+            </div>
+        </footer>
+
+          <script id="cartTmpl" type="text/x-jquery-tmpl">  
+    {{each cart}}
+    <text   class="fonkk"> ${title}</text> <text class="fonkk" style="margin-left: 50px;margin-right: 100px;" >${qty} шт      ${price}</text> <input type="image" src="./images/cros.png">
+    <br> <br>
+
+    </div>
+
+
+{{/each}}
+     </script>
+
+      <script>
+          new MyShop ('products.xml','cart');
+          </script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <title>Пример веб-страницы</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/jquery-ui.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/xml2json.js"></script>
+    <script src="./js/jquery.tmpl.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/my.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 1000,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            }
+            });
+            $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+        </script>
+         <script>
+            $( function() {
+                $( "#slider-range2" ).slider({
+                range: true,
+                min: 0,
+                max: 1000,
+                values: [ 75, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount2" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                }
+                });
+                $( "#amount2" ).val( "" + $( "#slider-range2" ).slider( "values", 0 ) +
+                " - " + $( "#slider-range2" ).slider( "values", 1 ) );
+            } );
+            </script>
+<script>
+    $(function(){
+       $(".filter").click(function()
+       {
+           if($(this).hasClass('active'))
+               $(this).removeClass('active');
+               else
+               $(this).addClass('active');
+       });
+       return false;
+    }); 
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="m-3">
+                    <img src="./images/loopa.png" alt="Поиск">
+                    <br><br>
+
+                    <input type="image" src="./images/acompany.png">
+                    <input type="image" src="./images/delivery.png">
+                    <h5 class="fonk">Товары наши хороши - </h5>
+                    <h6 class="lfonk">развивайтесь, малыши!</h6>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="m-3">
+                    <p class="text-center">
+                        <img src="./images/logo.png" alt="гусари">
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="image2" src="./images/tryba.png">
+                <img class="image2" src="./images/time.png">
+                <input type="image" class="image2" src="./images/phone.png">
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-sm-9"> 
+                     <fonk style="margin-left: 150px;">
+                    <text ><a href="index.html">Главаная </a> >> <a href="">Товары для детей </a>>> <a
+                            href="">Коляски</a></text> </fonk>
+                    <br>
+                    <fonk style="margin-left: 150px;"></fonk>
+                    <text class="fonk2">Блендеры</text></fonk>
+                    <br>
+                    
+<text class="bigmage8" >
+                                     
+                    <text style="margin-left: 5px;font-size: 13pt;background-color: white;font-family: 'Trebuchet MS';">Сортировка</text> 
+                    <input class="buto" type="button" value="по популярности" style="font-size: 11pt;margin-top: 10px;" >
+                    <input class="buto" type="button" value="по цене" style="font-size: 11pt;" >
+                    <input class="buto" type="button" value="по цене и наличию" style="font-size: 11pt;" >
+                   
+                </text> 
+
+                    <br>
+              
+                    <br>
+                    
+                <div id="content">
+
+                </div>
+                <br>
+    
+               
+                       <text class="bigmage4" style="margin-left: 150px;">
+                        <br>
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/nazad.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/1.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/2.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/3.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/4.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/toka.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/9.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/go.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/po10.png">
+                        <input type="image" style="margin-left: 20px;margin-bottom: 20px;" src="./images/all.png" class="object">
+                     
+                       
+                      
+                    </text>
+            </div> 
+            <div class="col-sm-3    ">
+                <div class="col-sm">
+                    <text class="bigmage">
+                        <br>
+                        <text style="padding-left: 45px; font-size: 10pt;">В вашей корзине <br>
+                            <text style="padding-left: 45px; font-weight: 700; font-size: 10pt;"> 7 товаров <br>
+                                <text style="padding-left: 45px; font-weight: 700; font-size: 10pt;"> на сумму 1488 грн.
+                                </text>
+                            </text>
+                        </text>
+                        <br>
+                        <input type="image" style="margin-left: 70px; margin-bottom: 20px;"
+                            src="./images/buton.png">
+                            
+                    </text>
+
+                    <text class="bigmage5">
+                        <text class="fonk2"
+                            style=" display: block; padding-left: 50px; margin-top: 20px; padding-top: 10px;">
+                            <br>Цена,руб</text>
+                            <text  style="margin-bottom: 10px; "></text>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; margin-left: 10px;">
+                            <div id="slider-range" style="width:  175px; height: 8px; background-color: orange; border-radius: 9%;margin-left: 10px;"></div>
+                            <br>
+                            <text class="fonk2" style=" display: block; padding-left: 50px;  ">Вес,кг</text>
+                            <input type="text" id="amount2" readonly style="border:0; color:#f6931f; margin-left: 10px;">
+                            <div id="slider-range2" style="width:  175px; height: 8px; background-color: orange; border-radius: 10%;margin-left: 10px;"></div>
+                            <br><br>
+                        </text>
+<br>
+                        <text class="bigmage6">
+                        
+                            <text class="fonk2"style=" display: block; padding-left: 30px;">
+                            <br>Виды колясок</text>
+                            <p class="fonk3">
+                            <input type="checkbox" id="vehicle1" >
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Коляски</label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Прогулочные коляски</label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Коляски трости</label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Универсальные коляски</label><br>
+                            <input type="checkbox" id="vehicle1" >
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Коляски для двойни</label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Конверты</label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Защита от дождя </label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Сумки к коляскам</label><br>
+                            <input type="checkbox" id="vehicle1">
+                            <label for="vehicle1" style="line-height: 20pt;font-size: 9pt;"> Запчасти</label>
+                        </p>
+                        <br>
+                        </text>
+                        <text class="bigmage6">
+                            <text class="fonk2"style=" display: block; padding-left: 30px;margin-top: 20px; ">
+                                <br>Бренды</text>
+                                <p class="fonk3">
+                                    <input type="checkbox" id="vehicle1">
+                                    <label for="vehicle1"style="font-size: 9pt;" > ABC Design</label><br>
+                                    <input type="checkbox" id="vehicle1">
+                                    <label for="vehicle1" style="font-size: 9pt;" > Adamex</label><br>
+                                    <input type="checkbox" id="vehicle1">
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Androx</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Aneco</label><br>
+                                    <input type="checkbox" id="vehicle1">
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Anmar</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Baby car(беби кар)</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1" style="font-size: 9pt;" > Bebetto</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Britax</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Capella</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Chicoo</label><br>
+                                    <input type="checkbox" id="vehicle1" >
+                                    <label for="vehicle1"style="font-size: 9pt;"  > Navington</label><br>
+                                   
+                             
+                                </p>
+                                
+                        </text>
+                       
+                                
+                                
+                                
+                    <text class="bigmage6" >
+                        <text class="fonk2"style=" display: block; padding-left: 20px; margin-top: 20px; padding-top: 10px;">
+                            <br>Характеристики</text>
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Механизм <br>складывания  
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Количество колес 
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Колеса
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Максимальный <br>возраст 
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter" style="margin-left: 18px;">
+                                <li>
+                                    Цвет
+                                   <ul class="child">
+                                       <li>Красный</li>
+                                       <li>Желтый</li>
+                                       <li>Фиолетовый</li>
+                                       <li>Зеленый</li>
+                                       <li>Польнареф</li>
+                                   </ul>
+                               </li>
+                               <br><br><br><br>
+                            </div>
+                            
+                    </text>
+                    <br>
+                    <text class="bigmage6" >
+                        <text class="fonk2"style=" display: block; padding-left: 20px; ">
+                            <br>Каталог</text>
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Коляски    
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Мебель и матрасы
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Автокресла
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Зимние товары 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Одежда и обувь
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        Одежда для беременых
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        товары по <br>сниженым ценам
+                                    </li>
+                                </ul>
+                            </div>    
+                            <br> <br>  
+                    </text> 
+
+                       
+                      <br>
+                </div>
+                <img src="./images/lider.png " style="margin-left: 10px;">
+            </div>
+           
+        </div>
+
+
+        <footer>
+
+            <footer class="footer" >
+                <div class="container" >
+        <img src="./images/downlogo.png" class="down" style="margin-right:100px;">
+        <img src="./images/downtryba.png" class="down" style="margin-right:100px;">
+        <img class="icon down" style="background-position: 2px 0px;">
+        <img class="icon down" style="background-position: -28px 0px;">
+        <img class="icon down" style="background-position: -58px 0px;">
+        <img class="icon down" style="background-position: -89px 0px;">
+        <img class="icon down" style="background-position: -120px 0px;">
+        <img class="icon down" style="background-position: -150px 0px;">
+        <img class="icon down" style="background-position: -179px 0px; ">
+        <img src="./images/gees.png" style= "margin-left:70px; position: relative; top:-80px; "  class="object">
+                </div>
+            </footer>
+<script id="prodTmpl" type="text/x-jquery-tmpl">
+{{each product}}
+   
+ 
+        
+                <text class="newtext1" style="margin-left: 150px;"><a href="index3.html#cat_id=25&id=${id}">${title}</a> </text>
+   <br>
+    
+
+
+  <text class="bigmage3" style="margin-left: 150px;">
+    
+    <div class="media">
+        <img src="./img/${image}" style="margin-top: 10px;"> 
+        <table class="table table-sm" style="background-color: white; width:min-content; font-size: 8pt;"> 
+            <tbody>
+                <tr><th scope="row">Мощность:</th><td>800 Вт</td></tr>
+                <tr><th scope="row">Количество скоростей:</th><td>12</td></tr>
+                <tr><th scope="row">Тип</th><td>	погружной </td></tr>
+                <tr><th scope="row">Сфера применения </th><td>	бытовой</td></tr>
+                <tr><th scope="row">Материал </th><td>Метал</td></tr>
+                <tr><th scope="row  <a href="#" data-id="${id}" data-name="${title}" data-link="/index4.html" class="buy"><input type="image" src="./images/mus.png" style="display: block; float: bottom left; margin-top:10px;"></a></th></tr>
+            </tbody>
+        </table>
+        <div class="conteiner" style="margin-left: 25px;" > 
+           <br>
+           <img src="./images/nal.png">
+           <br>
+           <br>
+           <s>23123.</s>
+           <br>
+           <br>
+           <a href="#" data-id="${id}" data-name="${title}" data-link="/index4.html" class="buy"><button class="buton">${price}</button></a>
+       </div>
+        </text>
+    
+    </div>    
+           
+  </text>
+ {{/each}}
+        </script>
+
+        <script>
+            new MyShop('products.xml','category');
+        </script>
+        
+</body>
+
+</html>

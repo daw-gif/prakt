@@ -1,0 +1,52 @@
+@media screen and (max-width: 1024px)
+{
+
+    .fonk {
+        color: hsl(201, 68%, 28%);
+        font-size: 11pt;
+        text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
+          white 1px -1px 0;
+      }
+      
+      .lfonk {
+        color: #17577a;
+        
+        font-size: 10pt;
+        line-height: 1pt;
+        color: #17577a;
+        text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
+          white 1px -1px 0;
+      }
+      footer {
+        background-image: url("../images/downback.png");
+        background-repeat: repeat-x;
+        background-position-y: 100%;
+        height:  180px;
+        
+      }
+        .object {
+          display: none;
+}
+      
+      .down{
+        margin-top: 100px;
+      }
+
+      .bigmage7 {
+        background-image: url(../images/bakzakaz.png); 
+        background-repeat: no-repeat;
+        background-size: 500px;
+        margin-left: 285px;
+        width: 500;
+        height: 70px;
+        display: block;
+      
+  
+        
+      }
+      .tabl{
+        margin-right: 0px;
+      }
+      
+}
+  

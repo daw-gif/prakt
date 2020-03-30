@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "RotondaBold";
+  src: url("../fonts/RotondaBold.svg#RotondaBold") format("svg"),
+    url("../fonts/RotondaBold.ttf") format("truetype"),
+    url("../fonts/RotondaBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url("../images/back.png");
+  background-repeat: repeat-x;
+  background-color: #fbf3eb !important ;
+}
+footer {
+  background-image: url("../images/downback.png");
+  background-repeat: repeat-x;
+  background-position-y: 100%;
+}
+A {
+  font-family: "RotondaBold";
+  color: black; /* Цвет ссылок */
+ }
+ A:visited {
+  font-family: "RotondaBold";
+  color: black; /* Цвет посещенных ссылок */
+ }
+
+ 
+.number1 {
+  font-family: "RotondaBold";
+  font-size: 35pt;
+  color: #17577a;
+}
+.number2 {
+  font-family: "RotondaBold";
+  font-size: 35pt;
+  color: #4a8cbf;
+}
+
+
+.image2 {
+  margin-top: 15px;
+  width: 103%;
+}
+
+.image3 {
+  
+  width: 97%;
+}
+.buto {
+  font-family: "Trebuchet MS";
+  color: black; 
+  background: white; 
+  border:white;
+  
+}
+
+.buto:hover{
+  background: #d6edf4;
+}
+
+.buton{
+  font-family: "RotondaBold";
+  color: white; 
+  background: #4a8cbf; 
+  border: #17577a;
+  border-radius: 20px 0px 20px 0px;
+  border-style: dotted;
+  
+}
+.fonk {
+  color: #17577a;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
+    white 1px -1px 0;
+}
+.tabl{
+  margin-right: 150px;
+}
+
+.lfonk {
+  color: #17577a;
+  margin-left: 10px;
+  line-height: 1pt;
+  color: #17577a;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
+    white 1px -1px 0;
+}
+.fonkk{
+  font-family: "RotondaBold";
+  color: #17577a;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
+    white 1px -1px 0;
+    font-size: 14pt;
+}
+
+.fonk1 {
+  margin-left: 25px;
+}
+.fonk2 {
+  font-family: "RotondaBold";
+  font-size: 14pt;
+
+  color: #17577a;
+}
+.fonk3 {
+  margin-left: 30px;
+}
+.fonk4{
+  font-family: "Trebuchet MS";
+  display: block;
+  color: black;
+  font-size: 16pt;;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  background: url(../images/soc.png) no-repeat;
+  
+}
+
+
+.bigmage {
+  background-image: url(../images/sky.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  
+}
+
+.bigmage1 {
+  background-image: url(../images/fld2.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  
+}
+
+.bigmage2 {
+  background-image: url(../images/fld2.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+.bigmage3 {
+  background-image: url(../images/tov.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+.bigmage4 {
+  background-image: url(../images/bak.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+.bigmage5 {
+  background-image: url(../images/back-kost.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  
+}
+
+.bigmage6 {
+  background-image: url(../images/fld2.gif); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  
+
+}
+
+
+.bigmage7 {
+  background-image: url(../images/bakzakaz.png); 
+  background-repeat: no-repeat;
+  background-size: 500px;
+  margin-left: 720px;
+  width: 500;
+  height: 70px;
+  display: block;
+
+  
+}
+
+.bigmage8 {
+  background-image: url(../images/bak.png); 
+  background-repeat: no-repeat;
+  background-size: 500px;
+  margin-left: 150px;
+  width: 500;
+  height: 45px;
+  display: block;
+}
+.newtext1 {
+  font-family: "Trebuchet MS";
+  display: block;
+  color: black;
+  font-size: 16pt;
+}
+
+.newtext {
+  font-family: "Trebuchet MS ";
+  display: block;
+  color: black;
+  font-size: 11pt;
+  padding-left: 30px;
+}
+
+.filter {
+  list-style-image:  url(../images/plus.png);
+}
+
+.filter.active {
+  list-style-image: url(../images/minus.png);
+}
+
+.filter .child{
+  display: none;
+}
+
+.filter.active .child {
+  display: block;
+  list-style-image: none;
+  background-color: #f1e9e0 !important ;
+}
+
+
+gor {
+  font-family: "Trebuchet MS ";
+  display: block;
+  color: black;
+  font-size: 14pt;
+	position	: absolute;
+	top		: 200px;
+	left		: 0;
+  width		: 100%;
+  
+}
+.board
+{
+border: 4px double  goldenrod;
+border-style: dashed;
+ 
+}
+
+
+
+.bor {
+ 
+
+ display: block;
+	position	: absolute;
+
+  
+}

@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <title>Пример веб-страницы</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/jquery-ui.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/xml2json.js"></script>
+    <script src="./js/jquery.tmpl.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/my.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 1000,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            }
+            });
+            $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+        </script>
+         <script>
+            $( function() {
+                $( "#slider-range2" ).slider({
+                range: true,
+                min: 0,
+                max: 1000,
+                values: [ 75, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount2" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                }
+                });
+                $( "#amount2" ).val( "" + $( "#slider-range2" ).slider( "values", 0 ) +
+                " - " + $( "#slider-range2" ).slider( "values", 1 ) );
+            } );
+            </script>
+<script>
+    $(function(){
+       $(".filter").click(function()
+       {
+           if($(this).hasClass('active'))
+               $(this).removeClass('active');
+               else
+               $(this).addClass('active');
+       });
+       return false;
+    }); 
+</script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="m-3">
+                    <img src="./images/loopa.png" alt="Поиск">
+                    <br><br>
+
+                    <input type="image" src="./images/acompany.png">
+                    <input type="image" src="./images/delivery.png">
+                    <h5 class="fonk">Товары наши хороши - </h5>
+                    <h6 class="lfonk">развивайтесь, малыши!</h6>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="m-3">
+                    <p class="text-center">
+                        <img src="./images/logo.png" alt="гусари">
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="image2" src="./images/tryba.png">
+                <img class="image2" src="./images/time.png">
+                <input type="image" class="image2" src="./images/phone.png">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-sm-12">
+                     <fonk class="fonk1">
+                    <text ><a href="index.html">Главаная </a> >> <a href="">Товары для мам </a>>> <a
+                            href="">блендеры</a></text> </fonk>
+                            <br>
+                            <br>
+                            
+                          <div id="content">
+
+                          </div> 
+
+                         
+    <footer>
+
+        <footer class="footer"   >
+            <div class="container"  >
+      
+                <img src="./images/downlogo.png" class="down" style="margin-right:100px;">
+                <img src="./images/downtryba.png" class="down" style="margin-right:100px;">
+                <img class="icon down" style="background-position: 2px 0px;">
+                <img class="icon down" style="background-position: -28px 0px;">
+                <img class="icon down" style="background-position: -58px 0px;">
+                <img class="icon down" style="background-position: -89px 0px;">
+                <img class="icon down" style="background-position: -120px 0px;">
+                <img class="icon down" style="background-position: -150px 0px;">
+                <img class="icon down" style="background-position: -179px 0px; ">
+                <img src="./images/gees.png" style= "margin-left:70px; position: relative; top:-80px; "  class="object">
+            </div>
+        </footer>
+
+        <script id="oneProdTmpl" type="text/x-jquery-tmpl">
+            <text class="fonk2" style="margin-left: 100px;font-size: 27pt;">${title}</text>
+            <br>
+            <br>
+            <div class="media" style="margin-left: 100px;">
+                
+                <img src="./img/${image}"  class="board"> 
+<div class="container" style="margin-left: 40px;">
+                <table class="table table-sm" style="background-color: #fbf3eb; width:min-content; font-size: 8pt; "> 
+                    
+                    <tbody>
+                        
+                        <tr><th scope="row">Мощность:</th><td>800 Вт</td></tr>
+                        <tr><th scope="row">Количество скоростей:</th><td>12</td></tr>
+                        <tr><th scope="row">Тип</th><td>погружной </td></tr>
+                        <tr><th scope="row">Сфера применения </th><td>	бытовой</td></tr>
+                        <tr><th scope="row">Материал </th><td>Метал</td></tr>
+                        <tr><th scope="row"><a href="#" data-id="${id}" data-name="${title}" data-link="/index4.html" class="buy"><input type="image" src="./images/mus.png" style="display: block; float: bottom left; margin-top:10px;"></a></th></tr>
+                        <button class="buton">${price}</button> <br> <br>
+                    </tbody>
+                </table>
+            </div>
+                </div>
+                <br>
+                <br>
+                <div class="container" style="margin-left: 75px;"><text class="fonk4">
+                    Описание<br>${description}</text>
+                </div>
+        </script>
+        <script>
+            new MyShop('products.xml','product');   
+        </script>
+</body>
+
+</html>
